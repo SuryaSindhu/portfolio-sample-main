@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-line {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: bolder;
+    margin: 5% 25% 5% 8%;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-weight: bold !important;
+    font-size: 40px !important;
+}
+
+.icon {
+    display: none;
+}
+
+#mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 9%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.see-more-btn {
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 28px 8px;
+}
+
+.see-more-btn:hover {
+    background: #ccc;
+    color: #000;
+    border: none;
+}
+
+.projects-main {
+    margin: 80px 0;
+}
+
+.gallery-btn {
+    margin: 0 13%;
+}
+
+img {
+    max-width: 32.9%;
+}
+
+.writing a:hover, .email:hover {
+    color: #ccc !important;
+}
+
+/* full screen mode */
+@media (min-width: 768px) {
+    .projects-main {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-content {
+        margin-left: 8%;
+        margin-right: 20%;
+    }
+    .writing-section {
+        display: flex;
+        gap: 20px;
+    }
+    .writing-section-items {
+        width: 50%;
+    }
+
+    .writing, .email {
+        margin: 9%;
+        font-size: 26px;
+    }
+}
+
+/* mobile mode */
+@media (max-width: 768px) {  
+    .responsive-mode {
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 32px !important;
+    }
+
+    .header-line {
+        font-size: 45px;
+        width: 100%;
+        margin: 0;
+    }
+
+    img, .private, .grid-images {
+        display: none;
+    }
+    
+    .project-content p {
+        padding: 20px 0;
+    }
+
+    .writing-section-items {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .email, .writing {
+        font-size: 26px;
+    }
+
+    .icon {
+        display: block;
+        margin: 5% 0;
+        font-weight: bold;
+    }
+
+    #mobile-menu-X, #mobile-menu  {
+        display: none;
+    }
+
+    #mobile-menu {
+        margin: 5% 0;
+        font-size: 16px !important;
+    }
+
+    #mobile-menu a {
+        font-size: 16px !important;
+    }
+}
+
+/* Tablets mode */
+@media (min-width: 481px) and (max-width: 1280px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    .project-content {
+        margin: 0 9%;
+    }
+
+    .gallery-btn {
+        margin: 0 7%;
+    }
+}

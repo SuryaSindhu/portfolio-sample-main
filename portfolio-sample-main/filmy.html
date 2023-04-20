@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filmy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="w-75 d-flex align-items-center m-auto top">
+        <div>
+            <h1>Cinema Club is a simple utility app meant to make going out to a cinema as simple as hailing an Uber</h1>
+            <div class="d-flex justify-content-between header-content mt-5">
+                <div class="flex-item">
+                    <p>My role</p>
+                    <p>User research, prototyping, UI design</p>
+                    <p>Built the product from zero </p>                  
+                    <p>Branding</p>
+                </div>
+
+                <div class="flex-item">
+                    <p>Results</p>
+                    <p>Increase of app's MAUs and retention rate</p> 
+                    <p>Featured on Apple Store and Google Play</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <img src="https://karoliskosas.com/wp-content/uploads/2017/12/1.png" alt="pic1" class="w-75 d-block mx-auto">
+
+    <section class="m-auto w-75">
+        <div class="d-flex justify-content-between flex-gap sm-responsive-flex">
+            <p class="flex-item">
+                Cinema Club started as an internal experiment at YPlan, which eventually became a standalone product, helping YPlan acquire and retain cinema bookers. We wanted to create a better experience for finding films, showtimes and booking tickets in cities like London or New York. 
+            </p>
+
+            <p class="flex-item">
+                To be sure we're addressing the right problems we designed our process around regular cycles of prototyping and face to face user sessions, validating every step of the way with the input from real users. Our starting point was a  straightforward list of films currently shown in the cinemas, organized by popularity.
+            </p>
+        </div>
+    </section>
+
+    <section class="m-auto w-75">
+        <h1>In 99% of our user interviews, in order to find showtimes, people would search for a film or a cinema</h1>
+        <div class="d-flex justify-content-between flex-gap sm-responsive-flex">
+            <p class="flex-item">
+                With the film and cinema pages as the main touch points, we set up our app's architecture based on the two main use-cases: 'I want to find showtimes for a specific film that I want to see' or 'I want to see what's showing at a nearby cinema.'
+            </p>
+
+            <p class="flex-item">
+                Focusing on the utility of finding showtimes, we decided to strip the film and cinema information to the essentials, maximizing the rest of the space for the showtimes' list. 
+            </p>
+        </div>
+    </section>
+
+    <img src="https://karoliskosas.com/wp-content/uploads/2017/12/2.png" alt="pic1" class="w-75 d-block mx-auto">
+
+    <div class="w-75 mx-auto content">
+        <p>Having gone through a series of iterations we landed on a card-based showtimes' list, which allowed to easily change date with a horizontal date picker, and navigate from a cinema to a film and back by taping on cards.</p>
+    </div>
+
+    <img src="https://karoliskosas.com/wp-content/uploads/2017/12/3.png" alt="pic1" class="w-75 d-block mx-auto">
+
+    <section class="d-flex m-auto w-75 flex-gap sm-responsive-flex">
+        <div class="flex-item">
+            <h1> As the basic information unit showtimes' card needed to be succinct </h1>
+            <p>Since an average film in London has hundreds of showtimes per day, displaying a high volume of information in a limited space was a challenge. Clustering the showtimes into film or a cinema based cards allowed to separate showtimes into easily distinguishable and compact groups. The cards allowed us to go through a series of layout experiments, while learning the most meaningful data to be displayed along with the showtimes.</p>
+        </div>
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/4-card-animation.gif" alt="pic2" class="flex-item d-block">
+    </section>
+
+    <section class="m-auto w-75">
+        <h1>The next big challenge was figuring out the most meaningful organizational logic for the hundreds of showtimes available for each film.</h1>
+        <div class="d-flex justify-content-between flex-gap sm-responsive-flex">
+            <p class="flex-item">
+                Drawing on the user interviews we based the default sorting on the cinema's distance to the user. Building on different use-cases we identified a series of sorting alternatives (e.g. "I just want to see something nearby" - would bring the cinemas within a given distance with the soonest showtimes to the top of the list.)            </p>
+
+            <p class="flex-item">
+                In addition to sorting, we designed a simple filtering UI allowing to adjust the list based on the users' top concerns, such as price, time or a preferred cinema chain.             </p>
+        </div>
+    </section>
+
+    <section class="bg-dark d-flex justify-content-between sm-responsive-flex">
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/filtering-1.gif" alt="" class="image1">
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/5-2.png" alt="" class="image2">
+    </section>
+
+    <section class="m-auto w-75">
+        <div class="d-flex justify-content-between flex-gap sm-responsive-flex">
+            <p class="flex-item">
+                Talking to the users, it soon became apparent that they were surprisingly loyal to their favorite cinemas. In fact, a usual cinema goer would frequent the average number of 3 cinemas, usually in their neighborhood, close to work or simply ones that they liked. Building on that insight, we introduced a custom list of favorites cinemas right at the top on the top of film feed. 
+            <p class="flex-item">
+                A combination of cinema with it's current films in a swipe-able list afforded a quick overview of what's currently showing, and a shortcut to the showtimes of a film in a specific cinema, eliminating scrolling down the two lists from the user journey. By creating a meaningful data input opportunity for our users, we could start with a simple yet powerful personalization, e.g. we were able to push notifications with the upcoming films and prioritize cinemas in the list based on the users' preferences.         </div>
+    </section>
+
+    <img src="https://karoliskosas.com/wp-content/uploads/2017/12/6.png" alt="pic1" class="w-75 d-block mx-auto">
+
+    <section class="m-auto w-75">
+        <h1>While finding showtimes and cinemas was important, booking UX was highlighted  as the biggest pain point among our users.</h1>
+        <div class="d-flex justify-content-between flex-gap sm-responsive-flex">
+            <p class="flex-item">
+                Comprised of a couple nationwide chains and a few indie theaters, the cinema market in most places does not allow the third parties to access their tickets or initiate booking on the user's behalf. While it might be good for the cinema chains, it prevents the middle men such as Kayak or Priceline from entering their business, for the users it means having to go through a different UX, every time they want to book their tickets.
+            <p class="flex-item">
+                Seeing an opportunity for a workaround, we signed a deal to sell vouchers (tickets that work with any film, but do not guarantee a seat) with one of UK's biggest chains. Having access to the supply, we designed a simplified 2-step booking flow. In addition to that, with a simple price/distance visualization, we were able to provide the users with an insight on where and when to book.         </div>
+    </section>
+
+    <img src="https://karoliskosas.com/wp-content/uploads/2017/12/7-1.png" alt="pic1" class="w-75 d-block mx-auto py-5">
+    <img src="https://karoliskosas.com/wp-content/uploads/2017/12/8.png" alt="pic1" class="w-75 d-block mx-auto py-5">
+
+    <div class="m-auto w-75 d-flex justify-content-between sm-responsive-flex py-5">
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/9-checkout-animation2-1.gif" alt="" class="images py-5">
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/9-checkout-animation-1.gif" alt="" class="images py-5">
+    </div>
+
+    <section class="d-flex m-auto w-75 flex-gap sm-responsive-flex">
+        <div>
+            <h1> One of the most exiting things about building a new product is being able to experiment and take risks without too much to loose </h1>
+            <p>As part of research / design and development cycle, we ran a few experiments, trying to increase retention rate and become more useful to our users. In a series of user interviews we analyzed how people organize their night out a cinema, learning that most would simple post a screenshot of showtimes into a text message or a group chat. Seeing an opportunity to improve on it, we developed a Facebook Messenger integration, which allowed to share a chat-optimized image with the showtimes directly from the app. </p>
+        </div>
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/10a.gif" alt="pic2">
+    </section>
+
+    <section class="d-flex m-auto w-75 flex-gap sm-responsive-flex">
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/10b.png" alt="pic2">
+        <p>
+            Since the bookers were significantly more likely to come back to the app and book again, we wanted to encourage this first transaction to happen as quickly as possible. To facilitate it, we built a 24hr countdown clock with a special price for the tickets.
+        </p>
+        
+    </section>
+
+    <section class="d-flex m-auto w-75 flex-gap sm-responsive-flex">
+        <p>
+            Finally, to create a habit of coming back and check what's new this week (and hopefully increase the retention rate), a Tinder-like interaction of upcoming films was prototyped and tested.
+        </p>
+        <img src="https://karoliskosas.com/wp-content/uploads/2017/12/weekly.gif" alt="pic2">
+    </section>
+
+    <footer class="d-flex justify-content-between align-items-center sm-responsive-flex">
+        <h1><a href="main-responsive.html" class="text-decoration-none text-black">Home</a></h1>
+        <h1><a href="#top" class="text-decoration-none text-black">Up</a></h1>
+    </footer>
+</body>
+</html>

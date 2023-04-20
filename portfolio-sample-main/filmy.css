@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 26px !important;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-gap {
+    gap: 25px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section img {
+    width: 50%;
+}
+
+.content {
+    margin: 100px 0;
+}
+
+.image1 {
+    width: 30%;
+}
+
+.image2 {
+    width: 70%;
+} 
+
+.images {
+    width: 50%;
+}
+
+/* for mubi */
+.image-left {
+    margin-left: 25%;
+}
+
+footer {
+    margin: 150px;
+}
+
+footer a:hover {
+    color: #ccc !important;
+}
+
+/* full screen mode */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 45px !important;
+    }
+
+    h1 {
+        font-size: 35px !important;
+    }
+
+    p, li {
+        font-size: 20px !important;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    .content p {
+        width: 50%;
+    }
+}
+
+/* mobile mode */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 23px !important;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sm-responsive-flex {
+        flex-direction: column;
+    }
+
+    .image1, .image2 {
+        width: 100%
+    }
+
+    section img {
+        width: 100% !important;
+    }
+
+    .images {
+        width: 100%;
+    }
+}
+
+/* Tablets mode */
+@media (min-width: 481px) and (max-width: 1280px) {
+    header h1 {
+        font-size: 40px !important;
+    }
+}
